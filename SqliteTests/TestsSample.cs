@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
-using Java.IO;
+using GalaSoft.MvvmLight.Ioc;
 using NUnit.Framework;
 using SQLite;
 
@@ -21,13 +21,8 @@ namespace SqliteTestsDroid
 		SQLiteConnection conn;
 
 		[SetUp]
-		public void Setup() { 
-			string dbFilePath = Android.App.Application.Context.GetDatabasePath("MacTestRunner.db").AbsolutePath;			
-			string databaseFolder = System.IO.Path.GetDirectoryName(dbFilePath);
-			File folder = new File(databaseFolder);
-			if (!folder.Exists())
-				folder.Mkdir();
-			conn = new SQLite.SQLiteConnection(dbFilePath);
+		public void Setup() {
+			conn = SimpleIoc.Default.GetInstance<SQLiteConnection>();
 			conn.CreateTable<Fruit>();
 			conn.DeleteAll<Fruit>();
 		}
