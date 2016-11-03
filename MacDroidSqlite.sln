@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteTestsDroid", "SqliteTestsDroid\SqliteTestsDroid.csproj", "{25981DEA-8077-49C7-BA31-61B89272C26C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SqliteTests", "SqliteTests\SqliteTests.shproj", "{50AC2039-82A7-46F7-88A9-20F41FFC990A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacTestRunner", "MacTestRunner\MacTestRunner.csproj", "{3E735AF8-10B7-4655-9B19-EA8C90455FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25981DEA-8077-49C7-BA31-61B89272C26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25981DEA-8077-49C7-BA31-61B89272C26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25981DEA-8077-49C7-BA31-61B89272C26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25981DEA-8077-49C7-BA31-61B89272C26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E735AF8-10B7-4655-9B19-EA8C90455FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E735AF8-10B7-4655-9B19-EA8C90455FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E735AF8-10B7-4655-9B19-EA8C90455FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E735AF8-10B7-4655-9B19-EA8C90455FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
